@@ -12,7 +12,6 @@ for i in range(1, sum_rows + 1):
 
         gen_sheet = vouchers_wb.create_sheet()
 
-
         # Calculate total rows and columns in source
         total_rows = template_sheet.max_row
         total_columns = template_sheet.max_column
@@ -49,30 +48,5 @@ for i in range(1, sum_rows + 1):
 
         # saving the generated sheet
         vouchers_wb.save('template.xlsx')
-
-
-#  gen_sheet['B29'].value = data_sheet['A1'].value 
-#         gen_sheet['H29'].value = data_sheet['F1'].value 
-#         gen_sheet['E21'].value = data_sheet['E1'].value 
-#         gen_sheet['H19'].value = data_sheet['B1'].value 
-#         gen_sheet['H18'].value = data_sheet['C1'].value 
-#         gen_sheet['H14'].value = data_sheet['B1'].value 
-#         gen_sheet['H12'].value = data_sheet['B1'].value 
-#         gen_sheet['H6'].value = data_sheet['F1'].value 
-#         gen_sheet['B10'].value = data_sheet['D1'].value 
-#         gen_sheet['D5'].value = data_sheet['A1'].value 
-#         gen_sheet['E3'].value = data_sheet['E1'].value 
-#         gen_sheet['H2'].value = data_sheet['B1'].value 
-#         gen_sheet['H1'].value = data_sheet['C1'].value 
-
-#         gen_sheet.column_dimensions['E'].width = 20
-#         gen_sheet.column_dimensions['H'].width = 20
-#         gen_sheet['h2'].number_format = "DD/MM/YYYY"
-#         gen_sheet['h12'].number_format = "DD/MM/YYYY"
-#         gen_sheet['h14'].number_format = "DD/MM/YYYY"
-#         gen_sheet['h19'].number_format = "DD/MM/YYYY"
-
-#         # saving the generated sheet
-#         vouchers_wb.save('template.xlsx')
 
 print(vouchers_wb.sheetnames)
