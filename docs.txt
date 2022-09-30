@@ -1,0 +1,4 @@
+python automation using python.
+Run pip install openpyxl 
+on windows run the command on powershell
+happy hacking.
